@@ -62,7 +62,6 @@ resume_vecs = embeddings[1:]
 
 similarities = cosine_similarity([job_vec], resume_vecs)[0]
 
-# 📊 Step 7: Score and visualize
 df_results = pd.DataFrame({
     'Resume Name': resume_names,
         'Similarity Score (%)': np.round(similarities * 100, 2)
